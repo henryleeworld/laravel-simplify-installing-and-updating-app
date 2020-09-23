@@ -4,21 +4,21 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class RunAppUpdateExecutor extends Command
+class RunAppBuildUpExecutor extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'executor:app-update';
+    protected $signature = 'executor:app-build-up';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Run the AppUpdate executor class.';
+    protected $description = 'Run the application build up executor class.';
 
     /**
      * Create a new command instance.
@@ -37,6 +37,6 @@ class RunAppUpdateExecutor extends Command
      */
     public function handle()
     {
-        (new \App\Executor\AppUpdate())->run();
+        (new \App\Executor\AppBuildUpEexecutor())->run();
     }
 }

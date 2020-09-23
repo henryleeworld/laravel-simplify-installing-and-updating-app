@@ -4,7 +4,7 @@ namespace App\Executor;
 
 use AshAllenDesign\LaravelExecutor\Classes\Executor;
 
-class AppUpdate extends Executor
+class AppBuildUpEexecutor extends Executor
 {
     /**
      * Define the commands here that are to be run when

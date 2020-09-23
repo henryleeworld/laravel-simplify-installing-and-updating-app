@@ -10,10 +10,10 @@ $ git clone
 - 將 __.env.example__ 檔案重新命名成 __.env__，如果應用程式金鑰沒有被設定的話，你的使用者 sessions 和其他加密的資料都是不安全的！
 - 只要環境準備好，執行更新指令以便達成應用程式發布前的準備工作，包括安裝原始碼、準備資料庫、清除快取。
 ```sh
-$ php artisan executor:app-update
+$ php artisan executor:app-build-up
 ```
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/Z8rqMJ9.png)
+![](https://i.imgur.com/MRZx1m6.png)
 > 使用來一次完成所有準備任務。換句話說，就是典型的代辦事項清單
