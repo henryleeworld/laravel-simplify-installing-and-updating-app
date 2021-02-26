@@ -15,13 +15,15 @@ class AppBuildUpEexecutor extends Executor
     public function run(): Executor
     {
         return $this->simpleDesktopNotification('Starting Executor', 'Starting the AppUpdate Executor.')
-                    ->runExternal('composer install')
+                    ->runArtisan('down')
                     ->runArtisan('key:generate')
+                    ->runExternal('composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev')
                     ->runArtisan('migrate --seed')
-                    ->runArtisan('cache:clear')
-                    ->runArtisan('route:clear')
-                    ->runArtisan('config:clear')
-                    ->runArtisan('view:clear')
+                    ->runArtisan('auth:clear-resets')
+                    ->runArtisan('route:cache')
+                    ->runArtisan('config:cache')
+                    ->runArtisan('view:cache')
+                    ->runArtisan('up')
                     ->completeNotification();
     }
 }

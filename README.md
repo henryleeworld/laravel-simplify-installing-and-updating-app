@@ -15,5 +15,5 @@ $ php artisan executor:app-build-up
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/MRZx1m6.png)
+![](https://i.imgur.com/7s9Z2AT.png)
 > 使用來一次完成所有準備任務。換句話說，就是典型的代辦事項清單
